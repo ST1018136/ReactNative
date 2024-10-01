@@ -1,0 +1,403 @@
+[Breaking News] - Latest on the Weather
+
+Snow Covers the ‘berg - Prepare for the Cold
+
+The cold front approaching the WC is likely to make landfall tonight, Sunday evening bringing with it further cold temperatures to Cape Town, as well as a predicted 2 cm of snow to highest elevations of Table mountain if the weather pattern stays on course. The high mountains of Ceres, Matroosberg, Worcester, and potentially well in to Franschhoek – should all experience some snow activity Monday morning into Monday afternoon. The snowfall may extend further up into the NC with potential snowfall in the Hantamsberg region and Calvinia. Tuesday morning the snowfall could very well reach out over the Kouggaberge and Tsitsikamma mountains.More than likely the snowfall will all be under 5 cm and at higher elevations, but please send us your photos and snow reports as they happen.
+
+
+Global Digital Network is part of the “News Now Network” (NNN) 
+<View style={styles.container}>
+      <View style={styles.header}>
+      <Text style={styles.boldText}>Chrisstoffel's Ramen Restaurant</Text>
+      <StatusBar style="auto" />
+      </View>
+      <View style={styles.body}>
+        <Text></Text>
+      </View>
+    </View>
+  );
+}
+
+container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  header: {
+    backgroundColor: 'black',
+    padding: 20,
+  },
+  boldText: {
+    fontWeight: 'bold',
+    color: '#fff'
+  },
+  body: {
+    backgroundColor: 'blue',
+    padding: 30,
+  }
+});
+
+
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+import * as Font from 'expo-font';
+
+
+
+
+
+
+
+
+
+export default function App() {
+ 
+
+  
+  
+  return (
+    <View style={styles.container}>
+     
+      <Text style={styles.textColor}>Chrisstoffel's Ramen Restaurant</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'light-black',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  textColor: {
+    color: 'white',
+  },
+ 
+});
+
+
+
+
+
+import { StyleSheet, View, Text, Image, TouchableOpacity, TextInput, ScrollView, FlatList, ImageBackground, } from 'react-native'
+import React from 'react'
+import { SafeAreaView } from 'react-native-safe-area-context';
+import {TrashIcon} from  "react-native-heroicons/solid";
+
+import Screen from './screen';
+
+import { createStackNavigator } from 'react-navigation-stack';
+
+
+
+
+
+
+
+
+
+export default function App() {
+   
+  return (
+    <><><>
+          <SafeAreaView style={styles.background}>
+              <View style={styles.background}>
+                  <View style={styles.icon}>
+                      <TouchableOpacity>
+                          <Image source={require("../assets/images/welcome.png")} style={styles.objectCover} />
+
+                      </TouchableOpacity>
+                      <View style={styles.font1}>
+                          <Text style={styles.font2}> Welcome User</Text>
+                          <Text style={styles.font3}> Chrisstoffel's Ramen Restaurant</Text>
+
+                      </View>
+                      <View>
+                          <Text style={styles.text1}>Order Your </Text>
+                          <Text style={styles.text2}>Favourite Ramen 🤭</Text>
+
+                      </View>
+                      <View style={styles.main}>
+                          <TextInput style={styles.Input}
+                              keyboardType="default"
+                              placeholder="Search Dishes,..."
+                          >Search Dishes,...</TextInput>
+
+
+
+                      </View>
+                  </View>
+
+              </View>
+          </SafeAreaView>
+      </>
+
+          <Text style={styles.categories}> Dish Name</Text>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+              <View style={{
+                  backgroundColor: '#fff',
+                  margin: 14,
+                  borderRadius: 7,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  padding: 10,
+              }}>
+
+                  <Image source={require("../assets/images/spicy2.jpg")}
+                      style={{
+                          height: 200,
+                          width: 200,
+                      }} />
+                  <Text> Spicy Ramen Noodles</Text>
+
+
+              </View>
+              <View style={{
+                  backgroundColor: '#fff',
+                  margin: 14,
+                  borderRadius: 7,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  padding: 10,
+              }}>
+
+                  <Image source={require("../assets/images/beef1.jpg")}
+                      style={{
+                          height: 200,
+                          width: 200,
+                      }} />
+                  <Text> Spicy Ramen Noodles</Text>
+
+              </View>
+              <View style={{
+                  backgroundColor: '#fff',
+                  margin: 14,
+                  borderRadius: 7,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  padding: 10,
+              }}>
+
+                  <Image source={require("../assets/images/beef2.jpg")}
+                      style={{
+                          height: 200,
+                          width: 200,
+                      }} />
+                  <Text> Spicy Ramen Noodles</Text>
+
+              </View>
+              <View style={{
+                  backgroundColor: '#fff',
+                  margin: 14,
+                  borderRadius: 7,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  padding: 10,
+              }}>
+
+                  <Image source={require("../assets/images/chicken1.jpg")}
+                      style={{
+                          height: 200,
+                          width: 200,
+                      }} />
+                  <Text> Spicy Ramen Noodles</Text>
+
+              </View>
+              <View style={{
+                  backgroundColor: '#fff',
+                  margin: 14,
+                  borderRadius: 7,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  padding: 10,
+              }}>
+
+                  <Image source={require("../assets/images/chicken2.jpg")}
+                      style={{
+                          height: 200,
+                          width: 200,
+                      }} />
+                  <Text> Spicy Ramen Noodles</Text>
+
+              </View>
+              <View style={{
+                  backgroundColor: '#fff',
+                  margin: 14,
+                  borderRadius: 7,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  padding: 10,
+              }}>
+
+                  <Image source={require("../assets/images/halaal1.jpg")}
+                      style={{
+                          height: 200,
+                          width: 200,
+                      }} />
+                  <Text> Spicy Ramen Noodles</Text>
+
+              </View>
+              <View style={{
+                  backgroundColor: '#fff',
+                  margin: 14,
+                  borderRadius: 7,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  padding: 10,
+              }}>
+
+                  <Image source={require("../assets/images/halaal2.jpg")}
+                      style={{
+                          height: 200,
+                          width: 200,
+                      }} />
+                  <Text> Spicy Ramen Noodles</Text>
+
+              </View>
+              <View style={{
+                  backgroundColor: '#fff',
+                  margin: 14,
+                  borderRadius: 7,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  padding: 10,
+              }}>
+
+                  <Image source={require("../assets/images/veggie1.jpg")}
+                      style={{
+                          height: 200,
+                          width: 200,
+                      }} />
+                  <Text> Spicy Ramen Noodles</Text>
+
+              </View>
+              <View style={{
+                  backgroundColor: '#fff',
+                  margin: 14,
+                  borderRadius: 7,
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  padding: 10,
+              }}>
+
+                  <Image source={require("../assets/images/veggie2.jpg")}
+                      style={{
+                          height: 200,
+                          width: 200,
+                      }} />
+                  <Text> Spicy Ramen Noodles</Text>
+
+              </View>
+
+
+          </ScrollView>
+                    <ScrollView showsVerticalScrollIndicator ={false}>
+                     
+    
+                      
+
+                    </ScrollView>
+      </>
+              
+          </>
+      
+            
+
+                
+        
+  );
+}
+
+const DropDownMenu =() => {
+   
+}
+
+
+   
+
+
+const styles = StyleSheet.create({
+background: {
+    backgroundColor: 'white',
+    marginTop: 10,
+},
+
+Input: {
+    marginLeft: 20,
+    marginTop: 10,
+    color: 'white',
+    fontSize: 20,
+},
+
+categories:{
+fontSize: 30,
+fontWeight: 'bold',
+color: 'green',
+paddingTop: 10,
+},
+
+
+main: {
+    backgroundColor: 'grey',
+    width: 410,
+    height: 50,
+    borderRadius: 40,
+    borderWidth:1,
+    
+},
+
+text1:{
+    fontSize: 35,
+    marginLeft: 15,
+   
+},
+text2: {
+    fontWeight: 'bold',
+    fontSize: 40,
+    marginLeft: 15,
+},
+
+icon:{
+alignItems: 'baseline',
+},
+
+objectCover: {
+    
+    height: 60,
+    width: 60,
+    borderRadius: 200/2,
+    marginBottom: 30,
+    marginRight: 50,
+},
+font1: {
+  padding: 10,
+    
+    
+},
+font2: {
+    fontSize: 30,
+    fontWeight: 'bold',
+    backgroundColor: 'white',
+    marginRight: 50,
+    marginTop : 10,
+    borderRadius: 50,
+},
+ font3: {
+    fontSize :20,
+    backgroundColor: 'white',
+    borderRadius: 20,
+    marginTop: 10,
+ },
+DropDownMenu:{
+    position: 'absolute',
+    top: 4.5,
+    right: 1.5,
+    padding: 15,
+    borderRadius: 15,
+    backgroundColor: 'gray'
+}
+
+})
